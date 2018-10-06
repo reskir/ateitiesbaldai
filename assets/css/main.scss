@@ -61,6 +61,7 @@ p {
 .hero-wrapper {
   width: 100%;
   max-height: 550px;
+  padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,10 +101,11 @@ p {
 }
 .main-text {
   display: flex;
-  padding: 60px;
   background-color: #edecec;
   min-height: 500px;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   h1 {
     color: #00baff;
     font-weight: bold;
@@ -119,8 +121,9 @@ p {
   background: yellow;
   color: black;
   display: flex;
-  padding: 30px;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   .user-profile {
     margin-bottom: 20px;
   }
@@ -144,6 +147,8 @@ p {
   position: relative;
   display: flex;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   .box {
     padding: 60px;
   }

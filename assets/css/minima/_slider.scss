@@ -1,0 +1,17 @@
+.slider {
+  position: relative;
+  &-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: opacity 1s ease;
+    box-shadow: 3px 3px 40px $shadow-color;
+    opacity: 0;
+    &.active {
+      position: relative;
+      opacity: 1;
+    }
+  }
+}

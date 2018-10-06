@@ -1,0 +1,93 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<div class="hero-wrapper wrapper">
+  <div class="hero">
+    {%- asset hero-image.jpg magick:half magick:quality=90 -%}
+    <div class="hero-text-container">
+      <h1> Baldai be galvos skausmo ir streso </h1>
+      <p>Projektuojame ir įgyvendiname skirtingo sudėtingumo
+ir biudžeto projektus</p>
+    </div>
+  </div>
+</div>
+
+  <div class="main-text ">
+    <div class="wrapper">
+      <div class="row between-lg middle-xs">
+          <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 ">
+              <div class="box">
+                {% include slider.html %}
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-5 col-md-5 col-lg-offset-1 col-lg-5 last-lg last-sm last-md first-xs">
+              <div class="box">
+                <h1>Įsirenginėjat būstą? 🛋 </h1>
+                <p>
+                    Mes padėsime sukurti įvairaus kompleksiškumo ir 
+                    tipo baldus pritaikytus jūsų erdvei. Paruošime pasiūlymą, patarsime ir
+                    pagamsime baldus kokybiškai ir greitai, nes įsirengti jau reikėjo vakar?
+                </p>
+                <div class="x--mt">
+                  <a href="{{ "/kontaktai" | relative_url }}" class="button bg-color-00baff">Įvertinti prokektą</a>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="recommendations">
+    <div class="wrapper">
+      <div class="row center-xs middle-xs">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-offset-lg-1">
+          <div class="box user-profile">
+            <div class="user-image">
+              {% asset me.jpg magick:half magick:quality=30 %}
+            </div>
+            <div class="user-name">
+              Kiril Abaškin
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 start-lg start-xs">
+          <div class="box">
+            <blockquote>
+              Ateities baldai atliko puikų darbą,
+              baldai buvo surinkti labai greitai,
+              visos smulkmenos ir detalės buvo
+              integruotos į virtuvės baldus.
+            </blockquote>
+            <a href="{{ "/projektai" | relative_url }}" class="button bg-color-balck color-yellow">Daugiau projektų</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews">
+    <div class="wrapper">
+      <div class="row around-xs middle-xs">
+        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1">
+          <div class="box">
+              <h1>Sužinokite savo projekto kainą</h1>
+              <p>
+                  Užpildikyte mūsų klausimyną ir gaukite pasiūlymą projektui!
+              </p>
+              <div class="x--mt"> 
+                <a href="{{ "/baldu-uzsakymo-forma" | relative_url }}" class="button bg-color-yellow color-black">Pildikyte klausimyną</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
+            <div class="box">
+              {% asset budget-planning.png %}
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>

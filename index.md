@@ -1,6 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+slides: ['baldai1.jpg', 'baldai2.jpg', 'baldai3.jpg', 'baldai4.jpg', 'baldai5.jpg']
 ---

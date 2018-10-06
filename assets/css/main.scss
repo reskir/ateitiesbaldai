@@ -14,7 +14,8 @@ $spacing-unit: 30px !default;
 
 $text-color: #111 !default;
 $background-color: #fdfdfd !default;
-$brand-color: #2a7ae2 !default;
+$brand-color: #00baff !default;
+$yellow-color: #f9f96e;
 
 $grey-color: #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -109,7 +110,7 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
   h1 {
-    color: #00baff;
+    color: $brand-color;
     font-weight: bold;
     margin: 20px 0;
   }
@@ -120,7 +121,7 @@ p {
 }
 .recommendations {
   min-height: 300px;
-  background: yellow;
+  background: $yellow-color;
   color: black;
   display: flex;
   align-items: center;
@@ -145,7 +146,7 @@ p {
   min-height: 300px;
   width: 100%;
   background: black;
-  color: yellow;
+  color: $yellow-color;
   position: relative;
   display: flex;
   align-items: center;
@@ -182,19 +183,19 @@ p {
   top: 0;
 }
 .bg-color-00baff {
-  background-color: #00baff;
+  background-color: $brand-color;
 }
 .bg-color-yellow {
-  background-color: yellow;
+  background-color: $yellow-color;
 }
 .bg-color-black {
-  background-color: yellow;
+  background-color: $yellow-color;
 }
 .color-black {
   color: black;
 }
 .color-yellow {
-  color: yellow;
+  color: $yellow-color;
 }
 .slider {
   position: relative;

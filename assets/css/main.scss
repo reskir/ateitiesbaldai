@@ -228,7 +228,7 @@ p {
   .category-image {
     max-height: 100%;
     width: 100%;
-   // box-shadow: 5px 5px 20px #666;
+    // box-shadow: 5px 5px 20px #666;
     border-radius: 6px;
   }
   .category-title {
@@ -236,5 +236,12 @@ p {
     color: white;
     text-transform: uppercase;
     font-weight: 900;
+  }
+}
+
+.request {
+  padding: 30px;
+  .category {
+    max-height: 200px;
   }
 }

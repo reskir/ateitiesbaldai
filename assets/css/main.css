@@ -559,7 +559,7 @@ p {
 
 .hero-wrapper {
   width: 100%;
-  height: 550px;
+  max-height: 550px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -573,7 +573,7 @@ p {
     box-shadow: 5px 5px 40px #666;
     border-radius: 6px;
     width: 90%;
-    height: 600px; }
+    max-height: 600px; }
   .hero-wrapper .hero-text-container {
     position: absolute;
     display: flex;
@@ -606,8 +606,24 @@ p {
     color: #888;
     margin-bottom: 20px; }
 
+.recommendations {
+  min-height: 300px;
+  background: yellow;
+  color: black;
+  display: flex;
+  padding: 30px; }
+  .recommendations .user-image {
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid white;
+    overflow: hidden;
+    height: 100px;
+    width: 100px; }
+  .recommendations p {
+    margin-bottom: 18px; }
+
 .reviews {
-  height: 300px;
+  min-height: 300px;
   width: 100%;
   background: black;
   color: yellow;
@@ -643,8 +659,14 @@ p {
 .bg-color-yellow {
   background-color: yellow; }
 
+.bg-color-black {
+  background-color: yellow; }
+
 .color-black {
   color: black; }
+
+.color-yellow {
+  color: yellow; }
 
 .slider {
   position: relative; }

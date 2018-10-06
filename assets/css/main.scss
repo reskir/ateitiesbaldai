@@ -132,8 +132,8 @@ p {
     border-radius: 50%;
     border: 3px solid white;
     overflow: hidden;
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
   }
   p {
     margin-bottom: 18px;
@@ -150,7 +150,7 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
   .box {
-    padding: 60px;
+    padding: 30px 0;
   }
   h1 {
     font-weight: bold;
@@ -196,6 +196,7 @@ p {
 }
 .slider {
   position: relative;
+  margin-top: 24px;
   div {
     position: absolute;
     top: 0;

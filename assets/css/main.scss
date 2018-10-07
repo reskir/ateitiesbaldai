@@ -51,7 +51,7 @@ $on-laptop: 800px !default;
 @import "minima/_layout.scss";
 
 p {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 .site-header {
   border: 0;
@@ -109,7 +109,7 @@ p {
 .main-text {
   display: flex;
   background-color: #edecec;
-  min-height: 500px;
+  min-height: 600px;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -124,7 +124,7 @@ p {
   }
 }
 .recommendations {
-  min-height: 300px;
+  min-height: 500px;
   background: $yellow-color;
   color: black;
   display: flex;
@@ -148,7 +148,7 @@ p {
   }
 }
 .reviews {
-  min-height: 300px;
+  min-height: 600px;
   width: 100%;
   background: black;
   color: $yellow-color;
@@ -179,12 +179,7 @@ p {
     text-decoration: none;
   }
 }
-.questionmark {
-  position: absolute;
-  font-size: 16em;
-  right: 40px;
-  top: 0;
-}
+
 .bg-color-00baff {
   background-color: $brand-color;
 }
@@ -247,4 +242,8 @@ p {
   .category {
     max-height: 200px;
   }
+}
+
+.x--mt {
+  margin-top: 24px;
 }

@@ -12,11 +12,11 @@ $base-line-height: 1.5 !default;
 $serif-font: "Times New Roman", serif;
 
 $spacing-unit: 30px !default;
-$shadow-color: #999;
+$shadow-color: #999 !default;
 $text-color: #111 !default;
 $brand-color: #00cecb !default;
 $background-color: #fdfdfd !default;
-$yellow-color: #f9f96e;
+$yellow-color: #f9f96e !default;
 
 $main-bg: #edecec;
 
@@ -53,6 +53,7 @@ $on-laptop: 800px !default;
 @import "minima/_layout.scss";
 @import "minima/_slider.scss";
 @import "minima/_home.scss";
+@import "minima/_elements.scss";
 @import "minima/_aliases.scss";
 
 p {
@@ -63,18 +64,6 @@ p {
 }
 .site-title {
   padding: 24px 0;
-}
-
-.button {
-  display: inline-block;
-  padding: 8px 40px;
-  border-radius: 40px;
-  background-color: #444;
-  border: 0;
-  color: white;
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 .category {

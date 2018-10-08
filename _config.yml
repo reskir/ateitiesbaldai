@@ -42,10 +42,10 @@ plugins:
 assets:
   source_maps: true # false on JEKYLL_ENV=production
   destination: "/assets"
-  compression: true # true on JEKYLL_ENV=production
+  compression: false # true on JEKYLL_ENV=production
   gzip: true
   defaults:
-    js: { integrity: false } # true on JEKYLL_ENV=production
+    js:  { integrity: false } # true on JEKYLL_ENV=production
     css: { integrity: false } # true on JEKYLL_ENV=production
     img: { integrity: false } # true on JEKYLL_ENV=production
   caching:

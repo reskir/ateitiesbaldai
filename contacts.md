@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Kontaktinė informacija
+title: Bendraukime
 permalink: /kontaktai/
 navigation_weight: 3
 ---

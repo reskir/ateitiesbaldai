@@ -1,6 +1,6 @@
 ---
 layout: projects
-title: Projektai
+title: Tai ką įgyvendinome
 permalink: /projektai/
 navigation_weight: 1
 ---

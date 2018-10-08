@@ -2,6 +2,6 @@
 layout: page
 title: Kontaktinė informacija
 permalink: /kontaktai/
-navigation_weight: 5
+navigation_weight: 3
 ---
 

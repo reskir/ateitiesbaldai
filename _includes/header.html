@@ -1,7 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign default_paths = site.pages | sort: "navigation_weight" | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{%- asset logo-2.png width="240" alt="Ateities baldai" -%}</a>
 

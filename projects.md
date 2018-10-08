@@ -2,7 +2,7 @@
 layout: projects
 title: Projektai
 permalink: /projektai/
-navigation_weight: 2
+navigation_weight: 1
 ---
 
 <div class="wrapper">

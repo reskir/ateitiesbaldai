@@ -103,6 +103,3 @@ assets:
     - image
     - img
     - js
-  plugins:
-    css: { autoprefixer: {}}
-    img: { optim: {}}

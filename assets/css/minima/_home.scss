@@ -2,25 +2,29 @@
   position: relative;
 }
 .hero-wrapper {
-  max-height: 550px;
+  position: relative;
+  height: 550px;
   padding-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+
   @include media-query($on-palm) {
     display: none;
   }
+
   .hero {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     overflow: hidden;
-    box-shadow: 5px 5px 40px darken($shadow-color, 20);
+    box-shadow: 5px 5px 40px #666666;
     border-radius: 6px;
     width: 90%;
     max-height: 600px;
+    top: 40px;
   }
   .hero-text-container {
     position: absolute;

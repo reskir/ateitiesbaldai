@@ -414,7 +414,7 @@ table {
 
 .hero-wrapper {
   position: relative;
-  height: 550px;
+  height: 500px;
   padding-top: 30px;
   display: flex;
   align-items: center;
@@ -433,7 +433,7 @@ table {
     border-radius: 6px;
     width: 90%;
     max-height: 600px;
-    top: 40px; }
+    top: 0px; }
   .hero-wrapper .hero-text-container {
     position: absolute;
     display: flex;

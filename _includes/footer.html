@@ -1,7 +1,9 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <!-- render blocking css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+  <!--<data class="u-url" href="{{ "/" | relative_url }}"></data>-->
 
-  <div class="wrapper">
+  <!--<div class="wrapper">
 
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
 
@@ -16,13 +18,9 @@
             {%- endif -%}
             </li>
             {%- if site.email -%}
-            <!--<li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>-->
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
       </div>
 
       <div class="footer-col footer-col-3">
@@ -30,6 +28,6 @@
       </div>
     </div>
 
-  </div>
+  </div>-->
 
 </footer>

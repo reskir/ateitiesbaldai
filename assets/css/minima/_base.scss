@@ -28,7 +28,27 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height}
     $base-font-family;
   color: $text-color;
+
+  // background-image: asset_url("space.jpg"); //url("assets/images/space.jpg");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background: #0f2027; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #2c5364,
+  //   #203a43,
+  //   #0f2027
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to right,
+  //   #2c5364,
+  //   #203a43,
+  //   #0f2027
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-color: $background-color;
+
+  background-size: 100%;
+  background-repeat: no-repeat;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -110,6 +130,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: white;
   font-weight: $base-font-weight;
 }
 
@@ -158,7 +179,7 @@ blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 blockquote:before {
-  color: #ccc;
+  color: $background-color;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;

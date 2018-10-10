@@ -12,11 +12,12 @@ $base-line-height: 1.5 !default;
 $serif-font: "Times New Roman", serif;
 
 $spacing-unit: 30px !default;
-$shadow-color: #999 !default;
+$shadow-color: #292929 !default;
 $text-color: #111 !default;
-$brand-color: #00cecb !default;
-$background-color: #fdfdfd !default;
-$yellow-color: #f9f96e !default;
+$brand-color: #101010 !default;
+$background-color: #0c0c0c !default;
+$yellow-color: #f4d351e6 !default;
+$review-background: #30281f !default;
 
 $main-bg: #edecec;
 
@@ -27,10 +28,13 @@ $grey-color-dark: darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width: 1200px !default;
+$content-width: 1400px !default;
 
 $on-palm: 600px !default;
 $on-laptop: 800px !default;
+
+$default-border-radius: 8px;
+$default-box-shadow: 1px 1px 20px $shadow-color;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -55,43 +59,11 @@ $on-laptop: 800px !default;
 @import "minima/_home.scss";
 @import "minima/_elements.scss";
 @import "minima/_aliases.scss";
+@import "minima/_form.scss";
 
-p {
-  font-size: 1.2em;
-}
 .site-header {
   border: 0;
 }
 .site-title {
   padding: 24px 0;
-}
-
-.category {
-  width: 100%;
-  max-height: 350px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  margin-top: 24px;
-  justify-content: center;
-
-  .category-image {
-    max-height: 100%;
-    width: 100%;
-    // box-shadow: 5px 5px 20px #666;
-    border-radius: 6px;
-  }
-  .category-title {
-    position: absolute;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
-}
-
-.request {
-  padding: 30px;
-  .category {
-    max-height: 200px;
-  }
 }

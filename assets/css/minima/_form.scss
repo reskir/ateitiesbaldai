@@ -40,17 +40,15 @@
         }
     }
 
-    &.checked {
-        .label {
-            border: 5px solid #ec9800;
-            .checkmark {
-                display: block;
-                fill: #ec9800;
-            }
-            .category-image {
-                opacity: 0.4;
-                z-index: -1;
-            }
+    input:checked + .label {
+        border: 5px solid #ec9800;
+        .checkmark {
+            display: block;
+            fill: #ec9800;
+        }
+        .category-image {
+            opacity: 0.4;
+            z-index: -1;
         }
     }
 }

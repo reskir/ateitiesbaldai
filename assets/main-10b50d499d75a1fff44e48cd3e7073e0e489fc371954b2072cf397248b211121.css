@@ -574,12 +574,12 @@ table {
       top: 10px;
       right: 30px;
       display: none; }
-  .category.checked .label {
+  .category input:checked + .label {
     border: 5px solid #ec9800; }
-    .category.checked .label .checkmark {
+    .category input:checked + .label .checkmark {
       display: block;
       fill: #ec9800; }
-    .category.checked .label .category-image {
+    .category input:checked + .label .category-image {
       opacity: 0.4;
       z-index: -1; }
 

@@ -578,12 +578,12 @@ table {
       top: 10px;
       right: 30px;
       display: none; }
-  .category.checked .label {
+  .category input:checked + .label {
     border: 5px solid #ec9800; }
-    .category.checked .label .checkmark {
+    .category input:checked + .label .checkmark {
       display: block;
       fill: #ec9800; }
-    .category.checked .label .category-image {
+    .category input:checked + .label .category-image {
       opacity: 0.4;
       z-index: -1; }
 
@@ -788,19 +788,8 @@ table {
 
     </div>
 
-</article><script type="text/javascript">(function() {
-  const inputs = document.forms[0].elements;
-  [...inputs].forEach(input => {
-    input.addEventListener(
-      "change",
-      function(e) {
-        e.target.parentElement.classList.toggle("checked");
-      },
-      false
-    );
-  });
-})();
-</script>
+</article>
+
   </main><footer class="site-footer h-card">
   <!-- render blocking css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >

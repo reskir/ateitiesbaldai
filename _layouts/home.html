@@ -2,42 +2,40 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home wrapper">
 
-<div class="hero-wrapper wrapper">
-  <div class="hero">
+<div class="row center-xs middle-xs">
+  <div class="hero col-lg-7 col-md-8 col-xs-6">
     {%- asset hero-image.jpg magick:half magick:quality=60 -%}
-    <div class="hero-text-container">
-      <h1> Baldai be galvos skausmo ir streso </h1>
-      <p>Projektuojame ir įgyvendiname skirtingo sudėtingumo
-ir biudžeto projektus</p>
-    </div>
+  </div>
+  <div class="hero-text-container col-lg-5 col-md-4 col-xs-6">
+      <h1>baldai <span class="changing-text">gyvenimui</span></h1>
   </div>
 </div>
 
-  <div class="main-text ">
+  <div class="main-text">
     <div class="wrapper">
-      <div class="row between-lg middle-xs">
+      <div class="row around-xs between-lg middle-lg">
+          <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 col-lg-offset-1 first-xs">
+              <div class="box">
+                <h1>Įsirenginėjat būstą?</h1>
+                <p>
+                    Mes padėsime sukurti įvairaus sudėtingumo ir 
+                    tipo baldus pritaikytus jūsų erdvei. Paruošime pasiūlymą, patarsime ir
+                    pagamsime baldus kokybiškai ir kaip įmanoma greitai, nes įsirengti jau reikėjo vakar?
+                </p>
+                <div class="x--mt">
+                  <a href="{{ "/kontaktai" | relative_url }}" class="button bg-color-00baff">Įvertinti projektą</a>
+                </div>
+              </div>
+          </div>
           <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 ">
               <div class="box">
                 {% include slider.html %}
               </div>
           </div>
-          <div class="col-xs-12 col-sm-offset-1 col-sm-5 col-md-5 col-lg-offset-1 col-lg-5 last-lg last-sm last-md first-xs">
-              <div class="box">
-                <h1>Įsirenginėjat būstą? 🛋 </h1>
-                <p>
-                    Mes padėsime sukurti įvairaus kompleksiškumo ir 
-                    tipo baldus pritaikytus jūsų erdvei. Paruošime pasiūlymą, patarsime ir
-                    pagamsime baldus kokybiškai ir greitai, nes įsirengti jau reikėjo vakar?
-                </p>
-                <div class="x--mt">
-                  <a href="{{ "/kontaktai" | relative_url }}" class="button bg-color-00baff">Įvertinti prokektą</a>
-                </div>
-              </div>
-          </div>
+        </div>
       </div>
-    </div>
   </div>
 
   <div class="recommendations">
@@ -50,6 +48,14 @@ ir biudžeto projektus</p>
             </div>
             <div class="user-name">
               Kiril Abaškin
+            </div>
+            <div class="user-social">
+              <a href="https://www.facebook.com/kiril.abaskin" >
+                {% asset icons/fb.png width=25 %}
+              </a>
+              <a href="https://www.linkedin.com/in/kiril-aba%C5%A1kin-34842137/">
+                {% asset icons/linkedin.png width=25 %}
+              </a>
             </div>
           </div>
         </div>
@@ -71,7 +77,7 @@ ir biudžeto projektus</p>
   <div class="reviews">
     <div class="wrapper">
       <div class="row around-xs middle-xs">
-        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1">
+        <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
           <div class="box">
               <h1>Kiek kainuoja mano baldai?</h1>
               <p>
@@ -83,11 +89,16 @@ ir biudžeto projektus</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
-            <div class="box">
+            <!--<div class="box">
               {% asset budget-planning.png magick:half %}
-            </div>
+            </div>-->
         </div>
         </div>
       </div>
     </div>
   </div>
+
+<script>
+  var text = document.querySelector('.changing-text');
+  var texts = ['gyvenimui', 'laisvalaikiui', 'virtuvei'];
+</script>

@@ -1,72 +1,23 @@
+--- 
+layout: default 
 ---
-layout: default
----
+
 <article class="post">
-  <div class="wrapper">
-
-    <div class="post-content">
-        {{ content }}
-    </div>
-    <form class="request">
-      <h1>Pasirinkite erdves ir sužinokite projekto kainą bei preliminaru laiką per kurį jis bus paruoštas</h1>
-      <div class="wrapper">
-        <div class="row">
-          <!--<div class="col-lg-4">
-            <div class="box">
-              <h2>Pasirinkite baldų tipus</h2>
-              <ul>
-                <li>
-                  <input name="virtuves" id="virtuves" type="checkbox" />
-                  <label for="virtuves">Virtuvės</label>
-                </li>
-                <li>
-                  <input name="vonios" id="vonios" type="checkbox" />
-                  <label for="vonios">Vonios</label>
-                </li>
-                <li>
-                  <input name="svetaines" id="svetaines" type="checkbox" />
-                  <label for="svetaines">Svetaines</label>
-                </li>
-                <li>
-                  <input name="miegamojo" id="miegamojo" type="checkbox" />
-                  <label for="miegamojo">Miegamojo</label>
-                </li>
-                <li>
-                  <label for="kiti_baldai">Kita</label> <br />
-                  <input name="kiti_baldai" id="kiti_baldai" type="text" />
-                </li>
-              </ul>
+    <div class="wrapper">
+        <form class="request" action="https://getform.io/f/805d9493-e241-46e1-8ec9-f01978d1779e" method="POST" autocomplete="off">
+            <p class="color-text-light col-lg-6">
+                Pasirinkite baldus erdvėms ir jūsų poreikiams, o mes susisieksime ir patikslinsime preliminarią projekto kainą ir pagaminimo laikotarpį.</p>
+            <div class="row">
+                {%- include room_selection.html -%}
+                {%- include personal_info.html -%}
             </div>
-          </div>-->
-                <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    {% asset kitchen.jpg class="category-image" magick:quality=60 magick:half %}
-                    <h1 class="category-title">#Virtuves</h1>
-                </div>
-                <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    {% asset sveitaine.jpg class="category-image" magick:quality=60 magick:half %}
-                    <h1 class="category-title">#Svetaines</h1>
-                </div>
-                <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    {% asset vonia.jpg class="category-image" magick:quality=60 magick:half %}
-                    <h1 class="category-title">#Vonios</h1>
-                </div>
-                <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    {% asset miegamojo.jpg class="category-image" magick:quality=60 magick:half %}
-                    <h1 class="category-title">#Miegamojo</h1>
-                </div>
-                <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    {% asset rise-vilnius.jpg class="category-image" magick:quality=60 magick:half %}
-                    <h1 class="category-title">#Verslo</h1>
-                </div>
-                <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                    {% asset lauko.jpg class="category-image" magick:quality=60 magick:half %}
-                    <h1 class="category-title">#Lauko</h1>
-                </div>
-          </div>
-        </div>
-      </div>
-    </form>
+            <button class="button" id="submit">
+                Noriu sužinoti kainą
+            </button>
+        </form>
 
-  </div>
+    </div>
 
 </article>
+
+{%- asset form.js @inline -%}

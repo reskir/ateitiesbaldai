@@ -1,0 +1,24 @@
+
+- name: virtuves
+  displayName: Virtuvės
+  image: kitchen.jpg
+
+- name: svetaines
+  displayName: Svetainės
+  image: sveitaine.jpg
+
+- name: vonios
+  displayName: Vonios
+  image: vonia.jpg
+
+- name: miegamojo
+  displayName: Miegamojo
+  image: miegamojo.jpg
+
+- name: lauko
+  displayName: Lauko
+  image: lauko.jpg
+
+- name: verslo
+  displayName: Verslo
+  image: verslo.jpg

@@ -1,0 +1,17 @@
+<div class="room-selection row">
+    <h1 class="col-xs-12 title">
+        Erdvių pasirinkimas
+    </h1>
+    {% for question in site.data.questions %}
+        <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <input name="{{ question.name }}" class="input" id="{{ question.name }}" type="checkbox">
+            <label class="label" for="{{ question.name }}">
+                <div class="checkmark">
+                    {% asset icons/checkmark.svg @inline %}
+                </div>
+                {% asset {{question.image}} class="category-image" magick:quality=60 magick:half %}
+                <h1 class="category-title">#{{ question.displayName }}</h1>
+            </label>
+        </div>
+    {% endfor %}
+</div>

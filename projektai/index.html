@@ -30,7 +30,9 @@ figure {
 body {
   font: 400 16px/1.5 Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #111;
-  background-color: #fdfdfd;
+  background-color: #0c0c0c;
+  background-size: 100%;
+  background-repeat: no-repeat;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -102,13 +104,14 @@ h3,
 h4,
 h5,
 h6 {
+  color: white;
   font-weight: 400; }
 
 /**
   * Links
   */
 a {
-  color: #00cecb;
+  color: #101010;
   text-decoration: none; }
   a:hover {
     color: #111;
@@ -129,7 +132,7 @@ blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 blockquote:before {
-  color: #ccc;
+  color: #0c0c0c;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -164,16 +167,16 @@ pre {
   * Wrapper
   */
 .wrapper {
-  max-width: -webkit-calc(1200px - (30px * 2));
-  max-width: calc(1200px - (30px * 2));
+  max-width: -webkit-calc(1400px - (30px * 2));
+  max-width: calc(1400px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(1200px - (30px));
-      max-width: calc(1200px - (30px));
+      max-width: -webkit-calc(1400px - (30px));
+      max-width: calc(1400px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -225,9 +228,10 @@ table {
  * Site header
  */
 .site-header {
+  color: white;
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
-  min-height: 55.95px;
+  min-height: 115.95px;
   position: relative; }
 
 .site-title {
@@ -249,7 +253,7 @@ table {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #111;
+    color: white;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -258,7 +262,7 @@ table {
       position: absolute;
       top: 33px;
       right: 15px;
-      background-color: #fdfdfd;
+      background-color: #0c0c0c;
       border: 1px solid #e8e8e8;
       border-radius: 5px;
       text-align: right; }
@@ -293,8 +297,8 @@ table {
           margin-right: 0; } }
 
 /**
- * Site footer
- */
+   * Site footer
+   */
 .footer-heading {
   font-size: 18px;
   margin-bottom: 15px; }
@@ -341,8 +345,8 @@ table {
     width: -webkit-calc(100% - (30px / 2));
     width: calc(100% - (30px / 2)); } }
 /**
- * Page content
- */
+   * Page content
+   */
 .page-content {
   flex: 1; }
 
@@ -367,8 +371,8 @@ table {
   font-size: 24px; }
 
 /**
- * Posts
- */
+   * Posts
+   */
 .post-header {
   margin-bottom: 30px; }
 
@@ -404,58 +408,51 @@ table {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 12px;
     overflow: hidden;
-    transition: opacity 1s ease;
-    box-shadow: 3px 3px 40px #999;
+    transition: opacity 0.6s ease;
     opacity: 0; }
     .slider-image.active {
       position: relative;
-      opacity: 1; }
+      opacity: 1;
+      z-index: 1; }
 
 .home {
   position: relative; }
 
 .hero-wrapper {
   position: relative;
-  height: 500px;
-  padding-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  height: 500px; }
   @media screen and (max-width: 600px) {
     .hero-wrapper {
       display: none; } }
   .hero-wrapper .hero {
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     overflow: hidden;
-    box-shadow: 5px 5px 40px #666666;
-    border-radius: 6px;
-    width: 90%;
+    border-radius: 8px;
     max-height: 600px;
     top: 0px; }
   .hero-wrapper .hero-text-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 40%;
     color: white;
-    text-align: center;
-    padding: 0 12px; }
+    padding: 0 42px; }
     .hero-wrapper .hero-text-container h1 {
-      font-size: 2.5em;
-      font-weight: 600;
-      margin-bottom: 12px; }
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+      font-size: 3.5em;
+      font-weight: 300;
+      margin-bottom: 12px;
+      color: white;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 4px; }
+    .hero-wrapper .hero-text-container .changing-text {
+      color: #f4d351e6;
+      font-style: italic; }
     .hero-wrapper .hero-text-container p {
+      text-transform: uppercase;
       width: 70%;
-      font-size: 1.3em; }
+      font-weight: 600;
+      font-size: 1.5em; }
 
 .main-text {
   display: flex;
@@ -465,7 +462,7 @@ table {
   padding-top: 30px;
   padding-bottom: 30px; }
   .main-text h1 {
-    color: #00cecb;
+    color: #101010;
     font-weight: bold;
     margin: 20px 0; }
   .main-text p {
@@ -474,14 +471,20 @@ table {
 
 .recommendations {
   min-height: 500px;
-  background: #f9f96e;
-  color: black;
+  background: #f4d351e6;
+  color: #000;
   display: flex;
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px; }
   .recommendations .user-profile {
     margin-bottom: 20px; }
+  .recommendations .user-social {
+    margin-top: 12px; }
+    .recommendations .user-social a {
+      padding: 3px; }
+      .recommendations .user-social a:hover {
+        text-decoration: none; }
   .recommendations .user-image {
     display: inline-block;
     border-radius: 50%;
@@ -496,8 +499,8 @@ table {
 .reviews {
   min-height: 600px;
   width: 100%;
-  background: black;
-  color: #f9f96e;
+  background: #30281f;
+  color: white;
   position: relative;
   display: flex;
   align-items: center;
@@ -522,54 +525,119 @@ table {
     text-decoration: none; }
 
 .bg-color-00baff {
-  background-color: #00cecb; }
+  background-color: #101010; }
 
 .bg-color-yellow {
-  background-color: #f9f96e; }
+  background-color: #f4d351e6; }
 
 .bg-color-black {
-  background-color: #f9f96e; }
+  background-color: #f4d351e6; }
 
 .color-black {
   color: black; }
 
 .color-yellow {
-  color: #f9f96e; }
+  color: #f4d351e6; }
 
 .x--mt {
   margin-top: 24px; }
 
-p {
-  font-size: 1.2em; }
+.color-text-light {
+  color: #ddd; }
+
+.category {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  overflow: hidden; }
+  .category .category-image {
+    max-height: 100%;
+    width: 100%; }
+  .category .category-title {
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900; }
+  .category .input {
+    display: none; }
+  .category .label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: 5px solid transparent;
+    box-sizing: border-box; }
+    .category .label .checkmark {
+      position: absolute;
+      top: 10px;
+      right: 30px;
+      display: none; }
+  .category.checked .label {
+    border: 5px solid #ec9800; }
+    .category.checked .label .checkmark {
+      display: block;
+      fill: #ec9800; }
+    .category.checked .label .category-image {
+      opacity: 0.4;
+      z-index: -1; }
+
+.request {
+  padding: 24px; }
+  .request .button {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    height: 60px;
+    background-color: #ec9800;
+    color: white; }
+    .request .button:hover {
+      background-color: #ffa707; }
+  .request .room-selection {
+    margin-bottom: 24px; }
+    .request .room-selection .title {
+      font-weight: 900;
+      margin-bottom: 0; }
+  .request .personal {
+    color: white;
+    margin-bottom: 24px; }
+    .request .personal .title {
+      font-weight: 900; }
+    .request .personal .input {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      margin-top: 18px; }
+      .request .personal .input .label {
+        position: absolute;
+        color: black;
+        background: white;
+        top: 10px;
+        left: 10%;
+        z-index: 10;
+        padding: 0 24px;
+        font-size: 20px;
+        font-weight: bold; }
+      .request .personal .input .input {
+        border: 6px solid #ec9800;
+        height: 60px;
+        min-width: 300px;
+        padding: 0 12px;
+        font-size: 20px;
+        font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        outline: none; }
 
 .site-header {
   border: 0; }
 
 .site-title {
   padding: 24px 0; }
-
-.category {
-  width: 100%;
-  max-height: 350px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  margin-top: 24px;
-  justify-content: center; }
-  .category .category-image {
-    max-height: 100%;
-    width: 100%;
-    border-radius: 6px; }
-  .category .category-title {
-    position: absolute;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 900; }
-
-.request {
-  padding: 30px; }
-  .request .category {
-    max-height: 200px; }
 </style><!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Tai ką įgyvendinome | Ateities baldai</title>
 <meta name="generator" content="Jekyll v3.8.4" />
@@ -585,7 +653,7 @@ p {
 <!-- End Jekyll SEO tag -->
 <link type="application/atom+xml" rel="alternate" href="https://reskir.github.io/ateitiesbaldai//ateitiesbaldai/feed.xml" title="Ateities baldai" /></head><body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/ateitiesbaldai/"><img width="240" alt="Ateities baldai" src="/ateitiesbaldai/assets/logo-2-af49c34c5914cedd0ec32e4656bc5a6bd5f120dc0d52dc324b7f5892f9b3234d.png"></a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/ateitiesbaldai/"><img width="300" alt="Ateities baldai" src="/ateitiesbaldai/assets/logo4-5200ff9f6610c8653c44d879ea1cc9c4627dbba1c266f740142f203b0b14deaa.png"></a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -604,7 +672,7 @@ p {
         <div class="wrapper">
     <div class="row">
         <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img class="category-image" src="/ateitiesbaldai/assets/rise-vilnius-43e2e26e70a9a64d650880daad084eeac4726fd9634cbca585649735fc1ff573.jpg" />
+            <img class="category-image" src="/ateitiesbaldai/assets/verslo-43e2e26e70a9a64d650880daad084eeac4726fd9634cbca585649735fc1ff573.jpg" />
             <h1 class="category-title">#Verslui</h1>
         </div>
         <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">

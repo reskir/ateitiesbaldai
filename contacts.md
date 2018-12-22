@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Bendraukime
-permalink: /kontaktai/
+title: Informacija
+permalink: /informacija/
 navigation_weight: 3
 ---
 

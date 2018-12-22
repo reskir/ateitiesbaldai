@@ -1,121 +1,84 @@
 .home {
-  position: relative;
+    position: relative;
 }
 .hero-wrapper {
-  position: relative;
-  height: 500px;
+    .hero-text-container {
+        color: white;
+        margin: 24px 0;
 
-  @include media-query($on-palm) {
-    display: none;
-  }
-
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    overflow: hidden;
-    border-radius: $default-border-radius;
-    // box-shadow: $default-box-shadow;
-    max-height: 600px;
-    top: 0px;
-  }
-  .hero-text-container {
-    color: white;
-    padding: 0 42px;
-
-    h1 {
-      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-        "Lucida Sans", Arial, sans-serif;
-      font-size: 3.5em;
-      font-weight: 300;
-      margin-bottom: 12px;
-      color: white;
-      text-transform: uppercase;
-      text-align: center;
-      letter-spacing: 4px;
+        h1 {
+            font-weight: 100;
+        }
     }
-
-    .changing-text {
-      color: $yellow-color;
-      font-style: italic;
-    }
-
-    p {
-      text-transform: uppercase;
-      width: 70%;
-      font-weight: 600;
-      font-size: 1.5em;
-    }
-  }
 }
 .main-text {
-  display: flex;
-  background-color: $main-bg;
-  min-height: 600px;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  h1 {
-    color: $brand-color;
-    font-weight: bold;
-    margin: 20px 0;
-  }
-  p {
-    color: #888;
-    margin-bottom: 20px;
-  }
+    display: flex;
+    background-color: $main-bg;
+    min-height: 600px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h1 {
+        color: $brand-color;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+    p {
+        color: #888;
+        margin-bottom: 20px;
+    }
 }
 .recommendations {
-  min-height: 500px;
-  background: $yellow-color;
-  color: #000;
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  .user-profile {
-    margin-bottom: 20px;
-  }
-  .user-social {
-    margin-top: 12px;
-    a {
-      padding: 3px;
-      &:hover {
-        text-decoration: none;
-      }
+    min-height: 500px;
+    background: $yellow-color;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .user-profile {
+        margin-bottom: 20px;
     }
-  }
-  .user-image {
-    display: inline-block;
-    border-radius: 50%;
-    border: 3px solid white;
-    overflow: hidden;
-    height: 120px;
-    width: 120px;
-    margin-bottom: 12px;
-  }
-  p {
-    margin-bottom: 18px;
-  }
+    .user-social {
+        margin-top: 12px;
+        a {
+            padding: 3px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .user-image {
+        display: inline-block;
+        border-radius: 50%;
+        border: 3px solid white;
+        overflow: hidden;
+        height: 120px;
+        width: 120px;
+        margin-bottom: 12px;
+    }
+    p {
+        margin-bottom: 18px;
+    }
 }
 .reviews {
-  min-height: 600px;
-  width: 100%;
-  background: $review-background;
-  color: white;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  .box {
-    padding: 30px 0;
-  }
-  h1 {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  p {
-    margin-bottom: 20px;
-  }
+    min-height: 600px;
+    width: 100%;
+    background: $review-background;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    .box {
+        padding: 30px 0;
+    }
+    h1 {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
 }

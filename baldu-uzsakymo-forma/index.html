@@ -524,27 +524,6 @@ table {
   .button:hover {
     text-decoration: none; }
 
-.bg-color-00baff {
-  background-color: #101010; }
-
-.bg-color-yellow {
-  background-color: #f4d351e6; }
-
-.bg-color-black {
-  background-color: #f4d351e6; }
-
-.color-black {
-  color: black; }
-
-.color-yellow {
-  color: #f4d351e6; }
-
-.x--mt {
-  margin-top: 24px; }
-
-.color-text-light {
-  color: #ddd; }
-
 .category {
   position: relative;
   width: 100%;
@@ -553,14 +532,15 @@ table {
   justify-content: center;
   margin-top: 24px;
   overflow: hidden; }
-  .category .category-image {
-    max-height: 100%;
-    width: 100%; }
   .category .category-title {
     position: absolute;
     color: white;
-    text-transform: uppercase;
     font-weight: 900; }
+  .category .overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent; }
   .category .input {
     display: none; }
   .category .label {
@@ -572,7 +552,10 @@ table {
     align-items: center;
     width: 100%;
     border: 5px solid transparent;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
     .category .label .checkmark {
       position: absolute;
       top: 10px;
@@ -582,7 +565,9 @@ table {
     border: 5px solid #ec9800; }
     .category input:checked + .label .checkmark {
       display: block;
-      fill: #ec9800; }
+      fill: white; }
+    .category input:checked + .label .overlay {
+      background: rgba(247, 149, 0, 0.5); }
     .category input:checked + .label .category-image {
       opacity: 0.4;
       z-index: -1; }
@@ -608,30 +593,71 @@ table {
     margin-bottom: 24px; }
     .request .personal .title {
       font-weight: 900; }
-    .request .personal .input {
+    .request .personal .input-group {
       position: relative;
       display: flex;
       flex-direction: column;
       padding: 12px;
       margin-top: 18px; }
-      .request .personal .input .label {
+      .request .personal .input-group .label {
         position: absolute;
         color: black;
         background: white;
-        top: 10px;
+        top: 0px;
         left: 10%;
         z-index: 10;
         padding: 0 24px;
         font-size: 20px;
         font-weight: bold; }
-      .request .personal .input .input {
+      .request .personal .input-group .input {
         border: 6px solid #ec9800;
         height: 60px;
-        min-width: 300px;
+        width: 350px;
         padding: 0 12px;
         font-size: 20px;
         font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         outline: none; }
+        .request .personal .input-group .input::placeholder {
+          font-size: 18px; }
+
+.gallery .thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+  margin: 24px 0; }
+  .gallery .thumbnail .thumbnail-title {
+    position: absolute;
+    font-weight: 900; }
+  .gallery .thumbnail .thumbnail-image {
+    margin: 0;
+    background-size: cover;
+    max-height: 100%;
+    height: 100%;
+    display: block;
+    width: 100%; }
+
+.bg-color-00baff {
+  background-color: #101010; }
+
+.bg-color-yellow {
+  background-color: #f4d351e6; }
+
+.bg-color-black {
+  background-color: #f4d351e6; }
+
+.color-black {
+  color: black; }
+
+.color-yellow {
+  color: #f4d351e6; }
+
+.x--mt {
+  margin-top: 24px; }
+
+.color-text-light {
+  color: #ddd; }
 
 .site-header {
   border: 0; }
@@ -670,15 +696,14 @@ table {
     <div class="wrapper">
         <form class="request" action="https://getform.io/f/805d9493-e241-46e1-8ec9-f01978d1779e" method="POST" autocomplete="off">
             <p class="color-text-light col-lg-6">
-                Pasirinkite baldus erdvėms ir jūsų poreikiams, o mes susisieksime ir patikslinsime preliminarią projekto kainą ir pagaminimo laikotarpį.</p>
-            <div class="row"><div class="room-selection row">
+                Pasirinkite baldus erdvėms ir jūsų poreikiams, o mes susisieksime ir patikslinsime preliminarią projekto kainą ir pagaminimo laikotarpį.</p><div class="room-selection row">
     <h1 class="col-xs-12 title">
         Erdvių pasirinkimas
     </h1>
     
         <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <input name="virtuves" class="input" id="virtuves" type="checkbox">
-            <label class="label" for="virtuves">
+            <label class="label" for="virtuves" style="background-image: url('/ateitiesbaldai/assets/kitchen-9081f45275de92db5bd48caddba78b851c56ea901ab04f9268abeced4dbec67d.jpg')">
                 <div class="checkmark">
                     <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -686,14 +711,14 @@ table {
 </svg>
 
                 </div>
-                <img class="category-image" src="/ateitiesbaldai/assets/91f1af-496b3bd9fe00c4be6b3573dbeb94e5985ff3b2c3926fbe56bfdfed80b1be6307.jpg">
                 <h1 class="category-title">#Virtuvės</h1>
+                <div class="overlay"></div>
             </label>
         </div>
     
         <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <input name="svetaines" class="input" id="svetaines" type="checkbox">
-            <label class="label" for="svetaines">
+            <label class="label" for="svetaines" style="background-image: url('/ateitiesbaldai/assets/sveitaine-735dd22aa10c917a53eedbd2d6559e2c5a16499ee881baccfd675761aedecd43.jpg')">
                 <div class="checkmark">
                     <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -701,14 +726,14 @@ table {
 </svg>
 
                 </div>
-                <img class="category-image" src="/ateitiesbaldai/assets/42f989-d7ea37dd6983a53ba43baf9180c06ce1c323018aca0aaaf68abecd13c8b21de5.jpg">
                 <h1 class="category-title">#Svetainės</h1>
+                <div class="overlay"></div>
             </label>
         </div>
     
         <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <input name="vonios" class="input" id="vonios" type="checkbox">
-            <label class="label" for="vonios">
+            <label class="label" for="vonios" style="background-image: url('/ateitiesbaldai/assets/vonia-898a791f1352cefdc543e3b61a19e858bf87b443403ec9c276973e30050f4c1b.jpg')">
                 <div class="checkmark">
                     <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -716,14 +741,14 @@ table {
 </svg>
 
                 </div>
-                <img class="category-image" src="/ateitiesbaldai/assets/473ddd-af414b6c35d3464568ccca847082eaf534388e728a382eae05f6527fe3a25c22.jpg">
                 <h1 class="category-title">#Vonios</h1>
+                <div class="overlay"></div>
             </label>
         </div>
     
         <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <input name="miegamojo" class="input" id="miegamojo" type="checkbox">
-            <label class="label" for="miegamojo">
+            <label class="label" for="miegamojo" style="background-image: url('/ateitiesbaldai/assets/miegamojo-5379ca4064eea121b2a97e649e99c9dfacfbbf190777cb7831c3d6265d8a3c73.jpg')">
                 <div class="checkmark">
                     <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -731,14 +756,14 @@ table {
 </svg>
 
                 </div>
-                <img class="category-image" src="/ateitiesbaldai/assets/f3db35-8a9a3be4b371f0844b3ab0f26e3d859a24cf57b40afd450b0ff672e5aba1ed39.jpg">
                 <h1 class="category-title">#Miegamojo</h1>
+                <div class="overlay"></div>
             </label>
         </div>
     
         <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <input name="lauko" class="input" id="lauko" type="checkbox">
-            <label class="label" for="lauko">
+            <label class="label" for="lauko" style="background-image: url('/ateitiesbaldai/assets/lauko-180bea966c849f645fefd4e1f395eb00b39a5b5a0e41937f7598ed9834d0dbd0.jpg')">
                 <div class="checkmark">
                     <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -746,14 +771,14 @@ table {
 </svg>
 
                 </div>
-                <img class="category-image" src="/ateitiesbaldai/assets/75eb93-1182ba5cd7390b4bb4c9e58e0c3bd62932d034e052f4e6e18fd2438c43fef273.jpg">
                 <h1 class="category-title">#Lauko</h1>
+                <div class="overlay"></div>
             </label>
         </div>
     
         <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
             <input name="verslo" class="input" id="verslo" type="checkbox">
-            <label class="label" for="verslo">
+            <label class="label" for="verslo" style="background-image: url('/ateitiesbaldai/assets/verslo-43e2e26e70a9a64d650880daad084eeac4726fd9634cbca585649735fc1ff573.jpg')">
                 <div class="checkmark">
                     <?xml version="1.0"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -761,27 +786,26 @@ table {
 </svg>
 
                 </div>
-                <img class="category-image" src="/ateitiesbaldai/assets/a0ff84-a1ae164bd258091216e6cdadd20a82ffc54d9bdd394ef9c962c2ad1cd5661eb0.jpg">
                 <h1 class="category-title">#Verslo</h1>
+                <div class="overlay"></div>
             </label>
         </div>
     
-</div><div class="personal">
+</div><div class="personal col-lg-6">
     <h1 class="title">Papildoma informacija</h1>
-    <div class="input">
+    <div class="input-group">
         <label class="label" for="name">Vardas</label>
         <input class="input" type="text" name="name" id="name" required="required" placeholder="Kaip į Jus kreiptis"/>
     </div>
-    <div class="input">
+    <div class="input-group">
         <label class="label" for="email">El.pašto adresas</label>
         <input class="input" type="email" name="email" id="email" required="required" placeholder="Nurodykite kaip susiekti su jumis"/>
     </div>
-    <div class="input">
+    <div class="input-group">
         <label class="label" for="tel">Telefono numeris</label>
         <input class="input" type="tel" value="+370" name="tel" id="tel" required="required" placeholder="+370 xxxxxxxx"/>
     </div>
-</div></div>
-            <button class="button" id="submit">
+</div><button class="button" id="submit">
                 Noriu sužinoti kainą
             </button>
         </form>

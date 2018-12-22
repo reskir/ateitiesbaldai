@@ -524,27 +524,6 @@ table {
   .button:hover {
     text-decoration: none; }
 
-.bg-color-00baff {
-  background-color: #101010; }
-
-.bg-color-yellow {
-  background-color: #f4d351e6; }
-
-.bg-color-black {
-  background-color: #f4d351e6; }
-
-.color-black {
-  color: black; }
-
-.color-yellow {
-  color: #f4d351e6; }
-
-.x--mt {
-  margin-top: 24px; }
-
-.color-text-light {
-  color: #ddd; }
-
 .category {
   position: relative;
   width: 100%;
@@ -553,14 +532,15 @@ table {
   justify-content: center;
   margin-top: 24px;
   overflow: hidden; }
-  .category .category-image {
-    max-height: 100%;
-    width: 100%; }
   .category .category-title {
     position: absolute;
     color: white;
-    text-transform: uppercase;
     font-weight: 900; }
+  .category .overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent; }
   .category .input {
     display: none; }
   .category .label {
@@ -572,7 +552,10 @@ table {
     align-items: center;
     width: 100%;
     border: 5px solid transparent;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
     .category .label .checkmark {
       position: absolute;
       top: 10px;
@@ -582,7 +565,9 @@ table {
     border: 5px solid #ec9800; }
     .category input:checked + .label .checkmark {
       display: block;
-      fill: #ec9800; }
+      fill: white; }
+    .category input:checked + .label .overlay {
+      background: rgba(247, 149, 0, 0.5); }
     .category input:checked + .label .category-image {
       opacity: 0.4;
       z-index: -1; }
@@ -608,30 +593,71 @@ table {
     margin-bottom: 24px; }
     .request .personal .title {
       font-weight: 900; }
-    .request .personal .input {
+    .request .personal .input-group {
       position: relative;
       display: flex;
       flex-direction: column;
       padding: 12px;
       margin-top: 18px; }
-      .request .personal .input .label {
+      .request .personal .input-group .label {
         position: absolute;
         color: black;
         background: white;
-        top: 10px;
+        top: 0px;
         left: 10%;
         z-index: 10;
         padding: 0 24px;
         font-size: 20px;
         font-weight: bold; }
-      .request .personal .input .input {
+      .request .personal .input-group .input {
         border: 6px solid #ec9800;
         height: 60px;
-        min-width: 300px;
+        width: 350px;
         padding: 0 12px;
         font-size: 20px;
         font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         outline: none; }
+        .request .personal .input-group .input::placeholder {
+          font-size: 18px; }
+
+.gallery .thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 300px;
+  margin: 24px 0; }
+  .gallery .thumbnail .thumbnail-title {
+    position: absolute;
+    font-weight: 900; }
+  .gallery .thumbnail .thumbnail-image {
+    margin: 0;
+    background-size: cover;
+    max-height: 100%;
+    height: 100%;
+    display: block;
+    width: 100%; }
+
+.bg-color-00baff {
+  background-color: #101010; }
+
+.bg-color-yellow {
+  background-color: #f4d351e6; }
+
+.bg-color-black {
+  background-color: #f4d351e6; }
+
+.color-black {
+  color: black; }
+
+.color-yellow {
+  color: #f4d351e6; }
+
+.x--mt {
+  margin-top: 24px; }
+
+.color-text-light {
+  color: #ddd; }
 
 .site-header {
   border: 0; }
@@ -670,23 +696,23 @@ table {
     
     <div class="post-content">
         <div class="wrapper">
-    <div class="row">
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img class="category-image" src="/ateitiesbaldai/assets/verslo-43e2e26e70a9a64d650880daad084eeac4726fd9634cbca585649735fc1ff573.jpg" />
-            <h1 class="category-title">#Verslui</h1>
-        </div>
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img class="category-image" src="/ateitiesbaldai/assets/kitchen-9081f45275de92db5bd48caddba78b851c56ea901ab04f9268abeced4dbec67d.jpg" />
-            <h1 class="category-title">#Virtuvei</h1>
-        </div>
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img class="category-image" src="/ateitiesbaldai/assets/sveitaine-735dd22aa10c917a53eedbd2d6559e2c5a16499ee881baccfd675761aedecd43.jpg" />
-            <h1 class="category-title">#Svetainei</h1>
-        </div>
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img class="category-image" src="/ateitiesbaldai/assets/vonia-898a791f1352cefdc543e3b61a19e858bf87b443403ec9c276973e30050f4c1b.jpg" />
-            <h1 class="category-title">#Voniai</h1>
-        </div>
+    <div class="row gallery">
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('/ateitiesbaldai/assets/kitchen-9081f45275de92db5bd48caddba78b851c56ea901ab04f9268abeced4dbec67d.jpg')"></div>
+            <h1 class="thumbnail-title">#Virtuvei</h1>
+        </a>
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('/ateitiesbaldai/assets/sveitaine-735dd22aa10c917a53eedbd2d6559e2c5a16499ee881baccfd675761aedecd43.jpg')"></div>
+            <h1 class="thumbnail-title">#Svetainei</h1>
+        </a>
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('/ateitiesbaldai/assets/vonia-898a791f1352cefdc543e3b61a19e858bf87b443403ec9c276973e30050f4c1b.jpg')"></div>
+            <h1 class="thumbnail-title">#Voniai</h1>
+        </a>
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('/ateitiesbaldai/assets/verslo-43e2e26e70a9a64d650880daad084eeac4726fd9634cbca585649735fc1ff573.jpg')"></div>
+            <h1 class="thumbnail-title">#Verslui</h1>
+        </a>
     </div>
 </div>
 

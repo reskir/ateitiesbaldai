@@ -2,14 +2,14 @@
 
 // Define defaults for each variable.
 
-$base-font-family: Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol" !default;
+$base-font-family: Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol' !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
-$serif-font: "Times New Roman", serif;
+$serif-font: 'Times New Roman', serif;
 
 $spacing-unit: 30px !default;
 $shadow-color: #292929 !default;
@@ -44,26 +44,27 @@ $default-box-shadow: 1px 1px 20px $shadow-color;
 //   }
 // }
 @mixin media-query($device) {
-  @media screen and (max-width: $device) {
-    @content;
-  }
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
 
 @mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
+    font-size: $base-font-size * $ratio;
 }
 
-@import "minima/_base.scss";
-@import "minima/_layout.scss";
-@import "minima/_slider.scss";
-@import "minima/_home.scss";
-@import "minima/_elements.scss";
-@import "minima/_aliases.scss";
-@import "minima/_form.scss";
+@import 'minima/_base.scss';
+@import 'minima/_layout.scss';
+@import 'minima/_slider.scss';
+@import 'minima/_home.scss';
+@import 'minima/_elements.scss';
+@import 'minima/_form.scss';
+@import 'minima/_gallery.scss';
+@import 'minima/_aliases.scss';
 
 .site-header {
-  border: 0;
+    border: 0;
 }
 .site-title {
-  padding: 24px 0;
+    padding: 24px 0;
 }

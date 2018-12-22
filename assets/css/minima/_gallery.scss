@@ -1,0 +1,24 @@
+.gallery {
+    .thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 300px;
+        margin: 24px 0;
+
+        .thumbnail-title {
+            position: absolute;
+            font-weight: 900;
+        }
+
+        .thumbnail-image {
+            margin: 0;
+            background-size: cover;
+            max-height: 100%;
+            height: 100%;
+            display: block;
+            width: 100%;
+        }
+    }
+}

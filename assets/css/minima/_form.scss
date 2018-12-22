@@ -7,17 +7,19 @@
     margin-top: 24px;
     overflow: hidden;
 
-    .category-image {
-        max-height: 100%;
-        width: 100%;
-    }
-
     .category-title {
         position: absolute;
         color: white;
-        text-transform: uppercase;
         font-weight: 900;
     }
+
+    .overlay {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+
     .input {
         display: none;
     }
@@ -32,6 +34,10 @@
         width: 100%;
         border: 5px solid transparent;
         box-sizing: border-box;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
         .checkmark {
             position: absolute;
             top: 10px;
@@ -42,10 +48,16 @@
 
     input:checked + .label {
         border: 5px solid #ec9800;
+
         .checkmark {
             display: block;
-            fill: #ec9800;
+            fill: white;
         }
+
+        .overlay {
+            background: rgba(247, 149, 0, 0.5);
+        }
+
         .category-image {
             opacity: 0.4;
             z-index: -1;
@@ -79,20 +91,23 @@
     .personal {
         color: white;
         margin-bottom: 24px;
+
         .title {
             font-weight: 900;
         }
-        .input {
+
+        .input-group {
             position: relative;
             display: flex;
             flex-direction: column;
             padding: 12px;
             margin-top: 18px;
+
             .label {
                 position: absolute;
                 color: black;
                 background: white;
-                top: 10px;
+                top: 0px;
                 left: 10%;
                 z-index: 10;
                 padding: 0 24px;
@@ -102,11 +117,15 @@
             .input {
                 border: 6px solid #ec9800;
                 height: 60px;
-                min-width: 300px;
+                width: 350px;
                 padding: 0 12px;
                 font-size: 20px;
                 font-family: $base-font-family;
                 outline: none;
+
+                &::placeholder {
+                    font-size: 18px;
+                }
             }
         }
     }

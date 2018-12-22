@@ -6,22 +6,22 @@ navigation_weight: 1
 ---
 
 <div class="wrapper">
-    <div class="row">
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            {% asset verslo.jpg class="category-image" %}
-            <h1 class="category-title">#Verslui</h1>
-        </div>
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            {% asset kitchen.jpg class="category-image" %}
-            <h1 class="category-title">#Virtuvei</h1>
-        </div>
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            {% asset sveitaine.jpg class="category-image" %}
-            <h1 class="category-title">#Svetainei</h1>
-        </div>
-        <div class="category col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            {% asset vonia.jpg class="category-image" %}
-            <h1 class="category-title">#Voniai</h1>
-        </div>
+    <div class="row gallery">
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('{{ assets['kitchen.jpg'].digest_path }}')"></div>
+            <h1 class="thumbnail-title">#Virtuvei</h1>
+        </a>
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6" >
+            <div class="thumbnail-image" style="background-image: url('{{ assets['sveitaine.jpg'].digest_path }}')"></div>
+            <h1 class="thumbnail-title">#Svetainei</h1>
+        </a>
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('{{ assets['vonia.jpg'].digest_path }}')"></div>
+            <h1 class="thumbnail-title">#Voniai</h1>
+        </a>
+        <a href="#" class="thumbnail col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            <div class="thumbnail-image" style="background-image: url('{{ assets['verslo.jpg'].digest_path }}')"></div>
+            <h1 class="thumbnail-title">#Verslui</h1>
+        </a>
     </div>
 </div>

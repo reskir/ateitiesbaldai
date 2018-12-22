@@ -3,7 +3,7 @@
         Erdvių pasirinkimas
     </h1>
     {% for question in site.data.questions %}
-        <div class="category col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="category col-lg-4 col-md-6 col-sm-6 col-xs-6">
             <input name="{{ question.name }}" class="input" id="{{ question.name }}" type="checkbox">
             <label class="label" for="{{ question.name }}" style="background-image: url('{{ assets[question.image].digest_path }}')">
                 <div class="checkmark">

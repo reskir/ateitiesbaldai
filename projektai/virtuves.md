@@ -7,7 +7,7 @@ exclude: true
 
 <div class="row">
     <div class="col-lg-12">
-        <span class="color-text-light">Virtuvės baldai pagaminti pagal klientų poreikius</span>
+        <p>Virtuvės baldai pagaminti pagal klientų poreikius.</p>
     </div>
     <br />
     <br />

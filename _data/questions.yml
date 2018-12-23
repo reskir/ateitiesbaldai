@@ -1,24 +1,24 @@
 
 - name: virtuves
-  displayName: Virtuvės
+  displayName: Virtuvė
   image: kitchen.jpg
 
 - name: svetaines
-  displayName: Svetainės
+  displayName: Svetainė
   image: svetaine.jpg
 
 - name: vonios
-  displayName: Vonios
+  displayName: Vonia
   image: vonia.jpg
 
 - name: miegamojo
-  displayName: Miegamojo
+  displayName: Miegamasis
   image: miegamojo.jpg
 
 - name: lauko
-  displayName: Lauko
+  displayName: Laukas
   image: lauko.jpg
 
 - name: verslo
-  displayName: Verslo
+  displayName: Verslas
   image: verslo.jpg

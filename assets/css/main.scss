@@ -63,7 +63,12 @@ $default-box-shadow: 1px 1px 20px $shadow-color;
 @import 'minima/_aliases.scss';
 
 .site-header {
+    width: 100%;
+    background: $background-color;
     border: 0;
+    z-index: 10;
+    // border-bottom: 2px solid #f79500;
+    // box-shadow: 2px 2px 1px lighten(#f79500, 1%);
 }
 .site-title {
     padding: 24px 0;

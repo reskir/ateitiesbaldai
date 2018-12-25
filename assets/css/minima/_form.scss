@@ -46,7 +46,7 @@
     }
 
     input:checked + .label {
-        border: 5px solid #ec9800;
+        border: 5px solid $orange-color;
 
         .checkmark {
             display: block;
@@ -67,10 +67,10 @@
         font-size: 16px;
         font-weight: 900;
         height: 60px;
-        background-color: #ec9800;
+        background-color: $orange-color;
         color: white;
         &:hover {
-            background-color: lighten(#ec9800, 5%);
+            background-color: lighten($orange-color, 5%);
         }
     }
 
@@ -109,7 +109,7 @@
                 font-weight: 600;
             }
             .input {
-                border: 6px solid #ec9800;
+                border: 5px solid $orange-color;
                 height: 60px;
                 max-width: 350px;
                 padding: 0 12px;

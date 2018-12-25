@@ -1,0 +1,118 @@
+<div class="hero-slider">
+    <div class="hero-wrapper">
+        <div class="my-slider">
+            <div id="1" class="slide wrapper">
+                <div class="row center-xs middle-xs">
+                    <div class="hero-text-container col-lg-5 col-md-4 col-xs-12">
+                        <h1>baldai <span class="changing-text">gyvenimui</span></h1>
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-xs-12">
+                        {%- asset hero-image.jpg magick:half magick:quality=60 -%}
+                    </div>
+                </div>
+            </div>
+            <div id="2" class="slide wrapper">
+                <div class="row center-xs middle-xs">
+                    <div class="hero-text-container col-lg-5 col-md-4 col-xs-12">
+                        <h1>baldai <span class="changing-text">gyvenimui</span></h1>
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-xs-12">
+                        {%- asset baldai2.jpg -%}
+                    </div>
+                </div>
+            </div>
+            <div id="3" class="slide wrapper">
+                <div class="row center-xs middle-xs">
+                    <div class="hero-text-container col-lg-5 col-md-4 col-xs-12">
+                        <h1>baldai <span class="changing-text">gyvenimui</span></h1>
+                    </div>
+                    <div class="col-lg-7 col-md-8 col-xs-12">
+                        {%- asset baldai2.jpg -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <button data-controls='prev'></button><button data-controls='next'></button>
+    </div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
+<script>
+  var slider = tns({
+    container: '.my-slider',
+    items: 1,
+    mode: 'carousel',
+    slideBy: 'page',
+    edgePadding: '0',
+    axis: 'vertical',
+    autoplay: true,
+    autoplayButtonOutput: false,
+    controlsContainer: '.controls',
+    nav: false,
+    center: true,
+    speed: 500,
+    arrowKeys: true
+  });
+</script>
+
+<!--<script>
+    const slider = document.querySelector('.hero-slider');
+    const slides = document.querySelectorAll('.slide');
+    const wrapper = document.querySelector('.hero-wrapper');
+    const nextButton = document.querySelector('[data-controls=next]');
+    const prevButton = document.querySelector('[data-controls=prev]');
+
+    function nextClick(slideWidth, slides) {
+        var currentSlide;
+        var currentIndex;
+
+        Array.from(slides).forEach(slide => {
+            if (slide.classList.contains('active')){
+                currentSlide = slide;
+                currentIndex = parseInt(slide.id);
+            }
+        });
+
+        if (currentIndex < slides.length) {
+            var nextSlide = slides[currentIndex];
+            var slidesLength = slides.length;
+            currentSlide.classList.remove('active');
+            nextSlide.classList.add('active');
+            wrapper.style.transform = 'translateX(' + -slideWidth * currentIndex + 'px)';
+        } else if(currentIndex === slides.length) {
+            currentSlide.classList.remove('active');
+            slides[0].classList.add('active');
+            wrapper.style.transform = 'translateX(0px)';
+        }
+    }
+
+    function prevClick(slideWidth, slides) {
+        var currentSlide;
+        var currentIndex;
+
+        Array.from(slides).forEach(slide => {
+            if (slide.classList.contains('active')){
+                currentSlide = slide;
+                currentIndex = parseInt(slide.id);
+            }
+        });
+        if (currentIndex !== 1) {
+            var prevSlide = slides[currentIndex - 2];
+            wrapper.style.transform = 'translateX('+ -slideWidth * (currentIndex - 2) + 'px)';
+            currentSlide.classList.remove('active');
+            prevSlide.classList.add('active');
+        }
+    }
+
+    if (slides.length > 1) {
+        const slideWidth = slides[0].clientWidth;
+        const wrapperWidth = slides.length * slideWidth;
+        wrapper.style.width = wrapperWidth + 'px';
+        wrapper.style.transform = 'translateX(0px)';
+        nextButton.addEventListener('click', (e) => nextClick(slideWidth, slides), false);
+        prevButton.addEventListener('click', (e) => prevClick(slideWidth, slides), false);
+    }
+
+</script>-->

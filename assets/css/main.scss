@@ -15,7 +15,7 @@ $spacing-unit: 30px !default;
 $shadow-color: #292929 !default;
 $text-color: #ddd !default;
 $brand-color: #101010 !default;
-$background-color: #0c0c0c !default;
+$background-color: #0a0a0a !default;
 $review-background: #30281f !default;
 
 $main-bg: #edecec;
@@ -72,5 +72,5 @@ $default-box-shadow: 1px 1px 20px $shadow-color;
     // box-shadow: 2px 2px 1px lighten(#f79500, 1%);
 }
 .site-title {
-    padding: 24px 0;
+    padding: 24px;
 }

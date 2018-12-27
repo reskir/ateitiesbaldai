@@ -75,6 +75,7 @@
         font-size: 25px;
         font-weight: 900;
         overflow: hidden;
+        text-decoration: underline;
 
         &:after {
             content: '➜';
@@ -86,7 +87,6 @@
 
         &:hover {
             color: lighten($orange-color, 10%);
-            text-decoration: none;
         }
     }
 }

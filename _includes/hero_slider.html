@@ -4,7 +4,8 @@
             <div id="1" class="slide wrapper">
                 <div class="row center-xs middle-xs">
                     <div class="hero-text-container col-lg-5 col-md-4 col-xs-12">
-                        <h3>virtuvei</h3>
+                        {% comment %} <h2 class="title">virtuvėi</h2> {% endcomment %}
+                        <a class="cta" href="#">virtuvių projektai</a>
                     </div>
                     <div class="col-lg-7 col-md-8 col-xs-12">
                         {%- asset baldai2.jpg -%}
@@ -14,7 +15,8 @@
             <div id="2" class="slide wrapper">
                 <div class="row center-xs middle-xs">
                     <div class="hero-text-container col-lg-5 col-md-4 col-xs-12">
-                        <h3>svetainėi</h3>
+                        {% comment %} <h2 class="title">svetainėi</h2> {% endcomment %}
+                        <a class="cta" href="#">svetainės projektai</a>
                     </div>
                     <div class="col-lg-7 col-md-8 col-xs-12">
                         {%- asset baldai1.jpg -%}
@@ -24,7 +26,8 @@
             <div id="3" class="slide wrapper">
                 <div class="row center-xs middle-xs">
                     <div class="hero-text-container col-lg-5 col-md-4 col-xs-12">
-                        <h3>miegamajam</h3>
+                        {% comment %} <h2 class="title">miegamajam</h2> {% endcomment %}
+                        <a class="cta" href="#">miegamojo projektai</a>
                     </div>
                     <div class="col-lg-7 col-md-8 col-xs-12">
                         {%- asset baldai3.jpg -%}
@@ -44,7 +47,7 @@
     container: '.my-slider',
     items: 1,
     mode: 'gallery',
-    autoplay: true,
+    autoplay: false,
     autoplayButtonOutput: false,
     controlsContainer: '.controls',
     nav: false,

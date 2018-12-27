@@ -7,6 +7,39 @@
     .hero-text-container {
         color: white;
         margin: 24px 0;
+        text-align: left;
+
+        .title {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta {
+            padding: 18px;
+            color: white;
+            display: inline-block;
+            font-size: 25px;
+            font-weight: 900;
+            overflow: hidden;
+
+            &:after {
+                content: '➜';
+                margin-left: 12px;
+                display: inline-block;
+                transform: translateY(50px) rotate(90deg);
+                transition: transform 0.3s ease;
+            }
+
+            &:hover {
+                &:after {
+                    content: '➜';
+                    transform: translateY(0px) rotate(0deg);
+                }
+                color: lighten($orange-color, 10%);
+                text-decoration: none;
+            }
+        }
 
         h1 {
             font-weight: 100;

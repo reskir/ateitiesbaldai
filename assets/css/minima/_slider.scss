@@ -45,10 +45,9 @@
             font-size: 2em;
             padding: 12px;
             outline: 0;
-            // transform: rotate(90deg);
 
             &:hover {
-                color: red;
+                color: lighten($orange-color, 10%);
             }
 
             &[data-controls='next'] {

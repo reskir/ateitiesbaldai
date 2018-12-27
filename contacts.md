@@ -7,10 +7,10 @@ navigation_weight: 3
 
 UAB Ateities baldai
 
-<a href="tel:+370 60507073">+370 605 07073</a>
+<a href="tel:{{site.tel}}">{{site.tel}}</a>
 
-Liepyno g. 28 - 10
+{{site.address}}
 
-A/S LT321000901830 Swedbank
+{{site.bank}}
 
-hello@ateitiesbaldai.lt
+{{site.email}}

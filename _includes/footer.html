@@ -1,3 +1,18 @@
-<footer class="site-footer h-card">
-  <!-- render blocking css -->
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-5 col-md-offset-2">
+                UAB Ateities baldai
+                <br />
+                {{site.address}}
+                <br />
+                {{site.bank}}
+            </div>
+            <div class="col-xs-12 col-md-4 col-md-offset-1">
+                {{site.email}}
+                <br />
+                <a href="tel:{{ site.tel }}">{{ site.tel }}</a>
+            </div>
+        </div>
+    </div>
 </footer>

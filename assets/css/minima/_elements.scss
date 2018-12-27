@@ -1,11 +1,27 @@
 .button {
     display: inline-block;
-    padding: 8px 40px;
-    border-radius: 40px;
+    padding: 18px;
     background-color: #444;
     border: 0;
     color: white;
-    &:hover {
-      text-decoration: none;
+    font-weight: 900;
+    overflow: hidden;
+    font-size: 18px;
+    border-radius: 40px;
+
+    &:after {
+        content: ' ';
+        margin-left: 12px;
+        display: inline-block;
+        transform: translateY(40px) rotate(60deg);
+        transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1);
     }
-  }
+
+    &:hover {
+        text-decoration: none;
+        &:after {
+            content: '➜';
+            transform: translateY(0px) rotate(0deg);
+        }
+    }
+}

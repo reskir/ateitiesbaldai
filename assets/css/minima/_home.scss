@@ -29,7 +29,7 @@
     padding-bottom: 30px;
     h1 {
         color: $brand-color;
-        font-weight: bold;
+        font-weight: 900;
         margin: 20px 0;
     }
     p {
@@ -83,8 +83,13 @@
     .box {
         padding: 30px 0;
     }
+    .button {
+        &:hover {
+            color: black;
+        }
+    }
     h1 {
-        font-weight: bold;
+        font-weight: 900;
         margin-bottom: 20px;
     }
     p {

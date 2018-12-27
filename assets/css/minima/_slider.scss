@@ -6,9 +6,8 @@
         left: 0;
         overflow: hidden;
         transition: opacity 0.6s ease;
-        // border-radius: $default-border-radius;
-        // box-shadow: $default-box-shadow;
         opacity: 0;
+
         &.active,
         &.tns-slide-active {
             position: relative;
@@ -30,6 +29,12 @@
         &.tns-slide-active {
             cursor: default;
             opacity: 1;
+            .cta {
+                &:after {
+                    content: '➜';
+                    transform: translateY(0px) rotate(0deg);
+                }
+            }
         }
     }
     .controls {
@@ -60,6 +65,28 @@
                     content: '↞';
                 }
             }
+        }
+    }
+
+    .cta {
+        padding: 18px;
+        color: white;
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 900;
+        overflow: hidden;
+
+        &:after {
+            content: '➜';
+            margin-left: 12px;
+            display: inline-block;
+            transform: translateY(50px) rotate(90deg);
+            transition: transform 0.4s cubic-bezier(0, 0, 0.2, 1);
+        }
+
+        &:hover {
+            color: lighten($orange-color, 10%);
+            text-decoration: none;
         }
     }
 }

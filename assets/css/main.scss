@@ -37,6 +37,11 @@ $on-laptop: 800px !default;
 $default-border-radius: 8px;
 $default-box-shadow: 1px 1px 20px $shadow-color;
 
+//sizes
+$ab-extra-small-size: 6px;
+$ab-small-size: $ab-extra-small-size * 2;
+$ab-medium-size: $ab-extra-small-size * 4;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -72,5 +77,5 @@ $default-box-shadow: 1px 1px 20px $shadow-color;
     // box-shadow: 2px 2px 1px lighten(#f79500, 1%);
 }
 .site-title {
-    padding: 24px;
+    padding: $ab-medium-size;
 }

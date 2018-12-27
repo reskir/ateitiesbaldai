@@ -84,11 +84,14 @@
         padding: 30px 0;
     }
     .button {
+        background: $orange-color;
+        color: $grey-color-light;
         &:hover {
-            color: black;
+            color: $grey-color-light;
         }
     }
     h1 {
+        color: $orange-color;
         font-weight: 900;
         margin-bottom: 20px;
     }

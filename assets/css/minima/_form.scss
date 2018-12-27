@@ -32,7 +32,7 @@
 
         .checkmark {
             position: absolute;
-            top: 10px;
+            top: 5%;
             right: 5%;
             display: none;
         }
@@ -46,7 +46,7 @@
     }
 
     input:checked + .label {
-        border: 5px solid $orange-color;
+        // border: 5px solid $orange-color;
 
         .checkmark {
             display: block;
@@ -109,7 +109,7 @@
                 font-weight: 600;
             }
             .input {
-                border: 5px solid $orange-color;
+                // border: 0px solid $orange-color;
                 height: 60px;
                 max-width: 350px;
                 padding: 0 12px;

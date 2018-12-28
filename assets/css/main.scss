@@ -55,8 +55,8 @@ $main-bg: #edecec;
 $grey-color: #828282 !default;
 $grey-color-light: #444 !default;
 $grey-color-dark: darken($grey-color, 25%) !default;
-$brand-yellow-color: #f3de8a !default;
-$brand-yellow-color-2: #e8c547;
+$brand-yellow-color: #e8c547;
+$brand-yellow-color-2: darken($brand-yellow-color, 10%) !default;
 
 $table-text-align: left !default;
 

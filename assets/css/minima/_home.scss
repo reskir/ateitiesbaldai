@@ -39,7 +39,7 @@
 }
 .recommendations {
     min-height: 500px;
-    background: $brand-yellow-color;
+    background: $brand-yellow-color-2;
     color: #000;
     display: flex;
     align-items: center;
@@ -84,14 +84,14 @@
         padding: 30px 0;
     }
     .button {
-        background: $brand-yellow-color-2;
+        background: $brand-yellow-color;
         color: $grey-color-light;
         &:hover {
             color: $grey-color-light;
         }
     }
     h1 {
-        color: $brand-yellow-color-2;
+        color: $brand-yellow-color;
         font-weight: 900;
         margin-bottom: 20px;
     }

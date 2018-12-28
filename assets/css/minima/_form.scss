@@ -45,7 +45,7 @@
     }
 
     input:checked + .label {
-        // border: 5px solid $orange-color;
+        // border: 5px solid $brand-yellow-color-2;
 
         .checkmark {
             display: block;
@@ -62,10 +62,9 @@
     padding: $ab-medium-size;
 
     .button {
-        background-color: $orange-color;
-        color: white;
+        background-color: $brand-yellow-color-2;
         &:hover {
-            background-color: lighten($orange-color, 5%);
+            background-color: lighten($brand-yellow-color-2, 5%);
         }
     }
 
@@ -104,7 +103,7 @@
                 font-weight: 600;
             }
             .input {
-                // border: 0px solid $orange-color;
+                // border: 0px solid $brand-yellow-color-2;
                 height: 60px;
                 max-width: 350px;
                 padding: 0 12px;

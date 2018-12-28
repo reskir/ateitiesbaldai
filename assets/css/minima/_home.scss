@@ -39,7 +39,7 @@
 }
 .recommendations {
     min-height: 500px;
-    background: $yellow-color;
+    background: $brand-yellow-color;
     color: #000;
     display: flex;
     align-items: center;
@@ -73,7 +73,7 @@
 .reviews {
     min-height: 600px;
     width: 100%;
-    background: $review-background;
+    // background: $review-background;
     color: white;
     position: relative;
     display: flex;
@@ -84,14 +84,14 @@
         padding: 30px 0;
     }
     .button {
-        background: $orange-color;
+        background: $brand-yellow-color-2;
         color: $grey-color-light;
         &:hover {
             color: $grey-color-light;
         }
     }
     h1 {
-        color: $orange-color;
+        color: $brand-yellow-color-2;
         font-weight: 900;
         margin-bottom: 20px;
     }

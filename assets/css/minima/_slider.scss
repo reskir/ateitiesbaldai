@@ -52,7 +52,7 @@
             outline: 0;
 
             &:hover {
-                color: lighten($orange-color, 10%);
+                color: lighten($brand-yellow-color-2, 10%);
             }
 
             &[data-controls='next'] {
@@ -70,7 +70,7 @@
 
     .cta {
         padding: 18px;
-        color: $orange-color;
+        color: $brand-yellow-color-2;
         display: inline-block;
         font-size: 25px;
         font-weight: 900;
@@ -86,7 +86,7 @@
         }
 
         &:hover {
-            color: lighten($orange-color, 10%);
+            color: lighten($brand-yellow-color-2, 10%);
         }
     }
 }

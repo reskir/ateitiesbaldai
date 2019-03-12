@@ -43,20 +43,27 @@ $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 $serif-font: 'Times New Roman', serif;
 
-$spacing-unit: 30px !default;
-$shadow-color: #292929 !default;
-$text-color: #ddd !default;
-$brand-color: #101010 !default;
-$background-color: #1f2535 !default;
-$review-background: $background-color !default;
-
-$main-bg: #edecec;
-
 $grey-color: #828282 !default;
-$grey-color-light: #444 !default;
+$grey-color-light: #eee !default;
 $grey-color-dark: darken($grey-color, 25%) !default;
 $brand-yellow-color: #e8c547;
 $brand-yellow-color-2: darken($brand-yellow-color, 10%) !default;
+
+$spacing-unit: 30px !default;
+$shadow-color: #292929 !default;
+$text-color: #000 !default;
+$brand-color: #333 !default;
+$background-color: #fff;
+$hero-text-bg: #edecec;
+$review-background: #000 !default;
+$recommendations-bg: $brand-yellow-color-2;
+
+$slider-color: #000;
+
+$main-bg: #edecec;
+
+$nav-link: #000;
+
 
 $table-text-align: left !default;
 

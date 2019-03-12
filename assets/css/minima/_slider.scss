@@ -46,7 +46,7 @@
             cursor: pointer;
             background: transparent;
             border: 0px solid white;
-            color: white;
+            color: $slider-color;
             font-size: 2em;
             padding: 12px;
             outline: 0;
@@ -70,9 +70,8 @@
 
     .cta {
         padding: 18px;
-        color: $brand-yellow-color;
         display: inline-block;
-        font-size: 25px;
+        font-size: 40px;
         font-weight: 900;
         overflow: hidden;
         text-decoration: underline;
